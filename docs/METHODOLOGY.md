@@ -33,6 +33,16 @@ The additional [spectrogram](../figures/synthetic_spectrogram.svg) is **100% art
 
 The power patterns and transients are designed to teach **reproducible spectral processing, missing-data safety and plot interpretation**, not to reproduce a real INTERMAGNET or Kyoto spectrogram.
 
+## Full latitude/longitude × UTC-time scientific-method demonstration
+
+The [three new figures](SPATIAL_TEMPORAL_ANALYSIS.md) extend geographic analysis from two UTC snapshots to **144 hourly comparisons over 10–15 May**. They test the same mathematical questions as the author's thesis without using its actual station measurements or published statistics.
+
+Each fictional station contributes a median of valid H from each UTC hour (**at least 50/60** minutes). Its difference is compared with its *own* **9 May median at the same UTC clock hour**. The resulting ΔH values are grouped into **signed geographic 30° latitude bands**, separately into **60° longitude bands**. Only groups with **three or more independent simulated stations** are shaded; missing or less-sampled groups remain dark, not zero. Peak |ΔH| between artificial 10 May 17:00 and 11 May 06:59 requires **10 of the 14 hourly comparisons** per station.
+
+The Spearman rank between **absolute geographic latitude** and peak |ΔH| measures a statistical pattern **explicitly built into the artificial XYZ equations**, and the plotted sample-count histogram reveals unequal geographical coverage. A rank coefficient here has **no empirical geophysical interpretation**, and does not account for magnetic latitude, longitudinal/local-time effects, station quality, measurement error, unobserved regions or causal attribution.
+
+**Reproduction:** [analysis code](../src/geomag_demo/spatial_temporal.py) · [tests](../tests/test_spatial_temporal.py) · [full caveats](SPATIAL_TEMPORAL_ANALYSIS.md).
+
 ## Geographic zones and 3D rendering
 
 - Geographic latitude remains **signed**, from −90° to +90°; longitude is between −180° and +180°.

@@ -29,6 +29,17 @@
     ],
     "invalid_stft_windows_in_SIM_012": 10
   },
+  "spatiotemporal": {
+    "source": "COMPLETELY SYNTHETIC STATION EQUATIONS; NO INTERMAGNET",
+    "station_total": 56,
+    "date_range": "2024-05-10 through 2024-05-15, artificial test dates",
+    "hourly_station_comparisons": 8064,
+    "hourly_valid": 8037,
+    "eligible_peak_stations": 56,
+    "min_stations_per_coloured_band": 3,
+    "spearman_rho_abs_geographic_lat_peak": 0.3065,
+    "warning": "Any statistical association is intentionally produced by fictional equations, not a real measured geomagnetic phenomenon."
+  },
   "files": [
     "synthetic_zonal_globe.svg",
     "synthetic_vector_globe.svg",
@@ -38,6 +49,9 @@
     "synthetic_daily_ranges.svg",
     "synthetic_coverage.svg",
     "synthetic_spectrogram.svg",
-    "interactive_synthetic_globe.html"
+    "interactive_synthetic_globe.html",
+    "synthetic_latitude_time_response.svg",
+    "synthetic_longitude_time_response.svg",
+    "synthetic_latitude_peak_relationship.svg"
   ]
 }
