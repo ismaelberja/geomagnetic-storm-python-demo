@@ -40,6 +40,17 @@
     "spearman_rho_abs_geographic_lat_peak": 0.3065,
     "warning": "Any statistical association is intentionally produced by fictional equations, not a real measured geomagnetic phenomenon."
   },
+  "thesis_geographic_components": {
+    "source": "FICTIONAL EQUATIONS ONLY: NOT REAL INTERMAGNET STATIONS OR OBSERVATIONS",
+    "stations": 56,
+    "quiet_day": "2024-05-09 artificial",
+    "event_day": "2024-05-10 artificial",
+    "metric": "Peak |component(t) minus 9 May daily mean| for H, X, Y, Z",
+    "invented_elevation_available": 50,
+    "invented_elevation_missing": 6,
+    "declination_method": "hourly median circular difference D(10 May)-D(9 May); min 50 matched minutes and 3 station per band",
+    "scientific_limitation": "Spatial patterns and fabricated elevations are not real scientific observations."
+  },
   "files": [
     "synthetic_zonal_globe.svg",
     "synthetic_vector_globe.svg",
@@ -52,6 +63,9 @@
     "interactive_synthetic_globe.html",
     "synthetic_latitude_time_response.svg",
     "synthetic_longitude_time_response.svg",
-    "synthetic_latitude_peak_relationship.svg"
+    "synthetic_latitude_peak_relationship.svg",
+    "synthetic_component_latitude.svg",
+    "synthetic_longitude_altitude.svg",
+    "synthetic_declination_latitude_time.svg"
   ]
 }
