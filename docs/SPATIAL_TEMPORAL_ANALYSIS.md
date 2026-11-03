@@ -33,7 +33,7 @@ python scripts/build_gallery.py
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
-The gallery now includes **11 deterministic SVG charts**, three of which illustrate the full spatial × temporal analysis; the existing standalone interactive 3D Earth remains unchanged. GitHub Actions regenerates all figures and verifies **byte-for-byte** reproducibility. The new calculations are in [spatial_temporal.py](../src/geomag_demo/spatial_temporal.py) with [offline synthetic tests](../tests/test_spatial_temporal.py).
+The full gallery now includes **14 deterministic SVG charts**, three of which illustrate the full spatial × temporal analysis; the existing standalone interactive 3D Earth remains unchanged. GitHub Actions regenerates all figures and verifies **byte-for-byte** reproducibility. The new calculations are in [spatial_temporal.py](../src/geomag_demo/spatial_temporal.py) with [offline synthetic tests](../tests/test_spatial_temporal.py).
 
 ## Why the distinction matters
 
