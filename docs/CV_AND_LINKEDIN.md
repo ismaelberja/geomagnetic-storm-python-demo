@@ -5,7 +5,7 @@ Public repository: https://github.com/ismaelberja/geomagnetic-storm-python-demo
 ## CV (English, concise)
 
 **Scientific Python & Geomagnetic Data Visualization — Independent Technical Portfolio**  
-Designed a reproducible Python data-quality and scientific-visualization workflow using fully synthetic IAGA-style time-series data. Implemented UTC alignment, missing-data handling, geospatial aggregation, six-day latitude/longitude × UTC-time analysis, descriptive rank correlations, synthetic-data spectrograms (Hann STFT), 3D Earth visualizations, an offline interactive browser viewer and automated regression tests (Python 3.11/3.12, GitHub Actions).  
+Designed a reproducible Python data-quality and scientific-visualization workflow using fully synthetic IAGA-style time-series data. Implemented UTC alignment, missing-data handling, geospatial aggregation, component-wise H/X/Y/Z amplitude comparisons, fictional altitude screening, circular declination angles, six-day latitude/longitude × UTC-time analysis, descriptive rank correlations, synthetic-data spectrograms (Hann STFT), 3D Earth visualizations, an offline interactive browser viewer and automated regression tests (Python 3.11/3.12, GitHub Actions).  
 **GitHub:** https://github.com/ismaelberja/geomagnetic-storm-python-demo
 
 ## CV (Spanish, concise)
