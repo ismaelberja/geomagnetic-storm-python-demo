@@ -1,0 +1,32 @@
+name: Synthetic scientific Python CI
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  software-and-figure-checks:
+    name: Python ${{ matrix.python-version }} / offline validation
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11','3.12']
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Configure Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run synthetic data and visualization tests
+        env:
+          PYTHONPATH: src
+        run: python -m unittest discover -s tests -v
+      - name: Regenerate gallery in temporary folder
+        run: python scripts/build_gallery.py --output-root /tmp/synthetic-gallery
+      - name: Check generated files are byte-for-byte reproducible
+        run: diff -r figures /tmp/synthetic-gallery
+      - name: Check minute-level QC fixture generation
+        run: python scripts/generate_iaga_demo.py --output-root /tmp/synthetic-data

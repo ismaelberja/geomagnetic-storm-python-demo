@@ -1,0 +1,28 @@
+{
+  "source": "FICTIONAL SYNTHETIC DEMO; NO REAL INTERMAGNET DATA",
+  "stations_total": 56,
+  "utc_times": [
+    "17:00",
+    "18:00"
+  ],
+  "usable_station_pairs": {
+    "17:00": 54,
+    "18:00": 54
+  },
+  "cells_with_two_or_more_stations": {
+    "17:00": 22,
+    "18:00": 22
+  },
+  "cell_colours_describe": "median \u0394H at geographically sampled fictional stations, not a global physical field",
+  "quality": "Synthetic missing observations are excluded; no interpolation",
+  "files": [
+    "synthetic_zonal_globe.svg",
+    "synthetic_vector_globe.svg",
+    "synthetic_latitude_bands.svg",
+    "synthetic_longitude_bands.svg",
+    "synthetic_time_series.svg",
+    "synthetic_daily_ranges.svg",
+    "synthetic_coverage.svg",
+    "interactive_synthetic_globe.html"
+  ]
+}
