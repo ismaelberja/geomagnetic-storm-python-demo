@@ -11,9 +11,9 @@ ROOT=Path(__file__).resolve().parents[1]
 FIGURES=ROOT/'figures'
 
 class GalleryReleaseTests(unittest.TestCase):
-    def test_all_eight_svg_parse_and_render_document(self):
+    def test_all_eleven_svg_parse_and_render_document(self):
         files=sorted(FIGURES.glob('synthetic_*.svg'))
-        self.assertEqual(len(files),8)
+        self.assertEqual(len(files),11)
         for f in files:
             with self.subTest(svg=f.name):
                 xml=ET.fromstring(f.read_bytes())
@@ -42,8 +42,8 @@ class GalleryReleaseTests(unittest.TestCase):
     def test_readme_previews_all_figures_without_broken_links(self):
         md=(ROOT/'README.md').read_text(encoding='utf-8')
         embeds=re.findall(r'!\[[^\]]*\]\((figures/[^)]+)\)',md)
-        self.assertEqual(len(embeds),8)
-        self.assertEqual(len(set(embeds)),8)
+        self.assertEqual(len(embeds),11)
+        self.assertEqual(len(set(embeds)),11)
         self.assertEqual(set(embeds),{f'figures/{x.name}' for x in FIGURES.glob('synthetic_*.svg')})
         for dest in re.findall(r'!?\[[^\]]*\]\(([^)]+)\)',md):
             if not re.match(r'^(?:https?://|mailto:|#)',dest):
