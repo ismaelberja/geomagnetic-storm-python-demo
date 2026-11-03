@@ -43,6 +43,12 @@ The Spearman rank between **absolute geographic latitude** and peak |ΔH| measur
 
 **Reproduction:** [analysis code](../src/geomag_demo/spatial_temporal.py) · [tests](../tests/test_spatial_temporal.py) · [full caveats](SPATIAL_TEMPORAL_ANALYSIS.md).
 
+## Submitted BSc thesis method coverage (all-synthetic)
+
+The [final-thesis crosswalk](THESIS_METHOD_COVERAGE.md) now documents how each original *scientific question* is represented by independent, all-fictional Python code. Three new [geographic-component figures](../figures/synthetic_component_latitude.svg) compare **H, X, Y, Z** with signed latitude, [H with longitude and deliberately fabricated elevation](../figures/synthetic_longitude_altitude.svg), and [circular declination D with latitude and UTC time](../figures/synthetic_declination_latitude_time.svg).
+
+The fictional **9 May daily-mean reference** for component peaks differs from both the BSc thesis's original **8 May daily-mean** reference and the public demo's separate **9 May same-hour median** six-day heatmaps. Fictional elevations are training covariates **without empirical physical meaning**. Circular angular differences are in degrees (not nT); a band requires at least three distinct stations with 50 paired valid minutes per hour. The public result never claims real storm-phase timing, a calibrated latitude effect, or a measured geomagnetic declination field.
+
 ## Geographic zones and 3D rendering
 
 - Geographic latitude remains **signed**, from −90° to +90°; longitude is between −180° and +180°.
