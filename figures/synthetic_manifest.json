@@ -15,6 +15,20 @@
   },
   "cell_colours_describe": "median \u0394H at geographically sampled fictional stations, not a global physical field",
   "quality": "Synthetic missing observations are excluded; no interpolation",
+  "spectrogram": {
+    "status": "FULLY SYNTHETIC, additionally injected oscillations; not real field observations",
+    "stations": [
+      "SIM-001",
+      "SIM-012"
+    ],
+    "fft_size_minutes": 128,
+    "hop_minutes": 20,
+    "frequencies_mhz": [
+      2.34375,
+      4.296875
+    ],
+    "invalid_stft_windows_in_SIM_012": 10
+  },
   "files": [
     "synthetic_zonal_globe.svg",
     "synthetic_vector_globe.svg",
@@ -23,6 +37,7 @@
     "synthetic_time_series.svg",
     "synthetic_daily_ranges.svg",
     "synthetic_coverage.svg",
+    "synthetic_spectrogram.svg",
     "interactive_synthetic_globe.html"
   ]
 }

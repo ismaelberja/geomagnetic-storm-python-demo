@@ -17,6 +17,7 @@ from geomag_demo.synthetic import STATIONS, two_time_snapshots  # noqa: E402
 from geomag_demo.analysis import export_snapshots, zones_for_hour  # noqa: E402
 from geomag_demo.visuals import (band_plot, build_html, coverage_plot, daily_plot,
                                  globe_svg, line_chart)  # noqa: E402
+from geomag_demo.spectrogram import spectrogram_svg, FREQUENCIES_MHZ  # noqa: E402
 
 
 def build(root: Path) -> dict:
@@ -30,6 +31,7 @@ def build(root: Path) -> dict:
         'synthetic_time_series.svg':line_chart(),
         'synthetic_daily_ranges.svg':daily_plot(),
         'synthetic_coverage.svg':coverage_plot(),
+        'synthetic_spectrogram.svg':spectrogram_svg(),
         'interactive_synthetic_globe.html':build_html(snap),
     }
     for name,content in outputs.items():
@@ -44,6 +46,10 @@ def build(root: Path) -> dict:
             t:sum(r['count']>=2 for r in zones_for_hour(rows)) for t,rows in snap.items()},
         'cell_colours_describe':'median ΔH at geographically sampled fictional stations, not a global physical field',
         'quality':'Synthetic missing observations are excluded; no interpolation',
+        'spectrogram':{'status':'FULLY SYNTHETIC, additionally injected oscillations; not real field observations',
+                       'stations':['SIM-001','SIM-012'], 'fft_size_minutes':128, 'hop_minutes':20,
+                       'frequencies_mhz':[round(x,6) for x in FREQUENCIES_MHZ],
+                       'invalid_stft_windows_in_SIM_012':10},
         'files':list(outputs),
     }
     (root/'synthetic_manifest.json').write_text(json.dumps(summaries,indent=2)+'\n',encoding='utf-8')

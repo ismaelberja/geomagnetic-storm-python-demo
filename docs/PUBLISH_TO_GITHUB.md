@@ -6,7 +6,7 @@ This is an independently authored **synthetic-data software demonstration**, not
 
 ## Verify the published project
 
-1. Open [the public project](https://github.com/ismaelberja/geomagnetic-storm-python-demo) from a browser session that is **not signed into GitHub**. Confirm that the README and seven SVG charts are visible.
+1. Open [the public project](https://github.com/ismaelberja/geomagnetic-storm-python-demo) from a browser session that is **not signed into GitHub**. Confirm that the README and eight SVG charts (including the clearly synthetic spectrogram) are visible.
 2. In [GitHub Actions](https://github.com/ismaelberja/geomagnetic-storm-python-demo/actions), check that the **Synthetic scientific Python CI** job passes with **Python 3.11 and 3.12**. The workflow executes unit tests, regenerates the complete gallery and compares generated files byte-for-byte.
 3. Download [the offline synthetic globe](../figures/interactive_synthetic_globe.html) and open it in your browser. Rotate/zoom, toggle the visualisation mode and switch between 17:00 and 18:00 UTC.
 4. Confirm the research archive [geomagnetic-storm-2024-analysis](https://github.com/ismaelberja/geomagnetic-storm-2024-analysis) remains **private**. Do **not** change that repository's visibility without a separate data-rights review.
