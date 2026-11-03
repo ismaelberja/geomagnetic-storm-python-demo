@@ -20,6 +20,19 @@ Each valid fictional station contributes its own components at the **same UTC mi
 
 The same-time comparison is an algorithmic demonstration. It does **not** prove causal attribution, field calibration, storm intensity or timing.
 
+## Spectral example: short-time Fourier transform (STFT)
+
+The additional [spectrogram](../figures/synthetic_spectrogram.svg) is **100% artificial**. For the fictional stations `SIM-001` and `SIM-012`, the signal is the generator's own **H(10 May) − H(9 May)** at each matching UTC minute, **plus two *explicitly injected* oscillations** whose frequency-bin centres are **2.34375 and 4.296875 mHz**. Their amplitudes are multiplied by a fictional envelope peaking near 18:30 UTC. These waves were introduced specifically for this signal-processing tutorial; they were **not observed**, are **not present** in the other gallery figures or the fictional station `.min` fixture, and must not be used for physical interpretation.
+
+- Sampling rate: **one sample per 60 seconds**, so the Nyquist frequency is **8.333 mHz**.
+- STFT: **128 contiguous minutes** per Hann-tapered window, evaluated every **20 minutes**, using an explicitly implemented, standard-library **radix-2 FFT**.
+- Prior to each transform, subtract the best-fitting straight line in the 128 samples; the aim is to reduce slowly varying baselines before visualizing the injected oscillations.
+- One-sided periodogram: for interior positive-frequency bin *k*, `PSD[k] = 2 |FFT(Hann × detrended signal)[k]|² / (fs × Σ Hann²)`, with `fs = 1/60 Hz`. This has units **nT²/Hz**. The heatmap shows **10·log10(PSD / (1 nT²/Hz))**, with fixed display scaling across stations; the colour scale is not a standardized geomagnetic index.
+- **Strict gap rejection:** *any* absent UTC minute in the entire 128-minute window invalidates that STFT column. `SIM-012` deliberately lacks readings 17:00–18:00 UTC, creating a hatched area broader than the one-hour outage because each invalid analysis window overlaps it. No values are set to zero, joined or interpolated.
+- The 128-minute window has approximate Fourier-bin spacing `1/(128×60) = 0.1302 mHz`; its finite time resolution means this is **not** a precise measurement of the event onset. The 0–24-hour x-axis is the fictional UTC date and the y-axis is frequency in **mHz**.
+
+The power patterns and transients are designed to teach **reproducible spectral processing, missing-data safety and plot interpretation**, not to reproduce a real INTERMAGNET or Kyoto spectrogram.
+
 ## Geographic zones and 3D rendering
 
 - Geographic latitude remains **signed**, from −90° to +90°; longitude is between −180° and +180°.
