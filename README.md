@@ -25,9 +25,23 @@ Vectors follow the explicit geographic convention **X = north, Y = east, Z = dow
 
 The new **time-frequency spectrogram** uses a **128-minute Hann window** and a **20-minute step** with a numerical Fourier transform implemented in pure Python. The example starts from the fictional same-UTC-minute ΔH signal and **explicitly adds two artificial oscillations at 2.34 and 4.30 mHz** so the frequency bands can be recognized. The SIM-012 sample has a 17:00–18:00 UTC outage: *every analysis window overlapping missing samples is hatched*, not filled or interpolated. The heat map reports one-sided power spectral density (PSD) in **dB relative to 1 nT²/Hz**. This is a **signal-processing demonstration**, not a measured 2024-storm spectrum. [Reproduce and check the STFT](src/geomag_demo/spectrogram.py) · [Method and limits](docs/METHODOLOGY.md).
 
-## Data science gallery — all eight charts
+## Scientific analysis: how the signal varies with latitude, longitude and time
 
-The remaining time-series, quality and regional plots are embedded below; the two 3D figures and spectrogram are above. All eight SVG outputs are generated using synthetic observations and can be reproduced byte-for-byte.
+This is the extended **research-method demonstration** inspired by the geographic analysis in my Physics BSc thesis. Unlike the two-instant globe snapshots, these new plots follow **144 hourly UTC comparisons over six days** for **56 completely invented observatories**.
+
+| Six-day latitude × time medians | Six-day longitude × time medians |
+| :---: | :---: |
+| ![Fully fictional six-day latitude-time change in horizontal geomagnetic field](figures/synthetic_latitude_time_response.svg) | ![Fully fictional six-day longitude-time change in horizontal geomagnetic field](figures/synthetic_longitude_time_response.svg) |
+
+![Synthetic correlation-style station peak amplitude versus absolute geographic latitude, with source coverage counts](figures/synthetic_latitude_peak_relationship.svg)
+
+**Pipeline:** derive hourly H medians from valid XYZ (at least **50/60 minutes**); subtract the same UTC-hour station baseline from fictional **9 May**; aggregate signed **30° latitude / 60° longitude** bands only if **≥3 stations** contribute; screen **14 event-window hours** per station and report descriptive rank correlation. The simulated sample has **8,037 valid of 8,064** station-hour comparisons. Its calculated **Spearman ρ ≈ +0.3065** is *deliberately determined by the fictional spatial equations*, **not evidence about the real 2024 storm**.
+
+[**Scientific methodology and reproducibility**](docs/SPATIAL_TEMPORAL_ANALYSIS.md) · [Python analysis module](src/geomag_demo/spatial_temporal.py) · [Synthetic regression tests](tests/test_spatial_temporal.py). No observations or original figures from the private thesis are included.
+
+## Data science gallery — all eleven charts
+
+The remaining time-series, quality and regional plots are embedded below; the two 3D figures, spectrogram and three new spatial-temporal analyses are above. All eleven SVG outputs are generated using synthetic observations and can be reproduced byte-for-byte.
 
 | Signed latitude-band medians | Longitude-band medians |
 | :---: | :---: |
@@ -71,7 +85,7 @@ $env:PYTHONPATH = 'src'; python -m unittest discover -s tests -v
 | **Scientific Python** | [Deterministic synthetic station/XYZ generator](src/geomag_demo/synthetic.py) and [computation module](src/geomag_demo/analysis.py) |
 | **Data parsing and QC** | [Strict synthetic IAGA-style parser](src/geomag_demo/analysis.py): UTC-minute validation, duplicate rejection, 99999 sentinels, provenance validation and complete/partial coverage |
 | **Time-series and spectral analysis** | Same-UTC-minute baselines, H = √(X² + Y²), F = √(X² + Y² + Z²), daily ranges, gap-aware **Hann STFT / PSD spectrogram** |
-| **Geospatial aggregation** | 30° latitude × 60° longitude cells; medians only with ≥2 independent fictional stations; signed hemisphere coordinates |
+| **Spatiotemporal analysis** | Six-day latitude/longitude × UTC-hour medians, sample sufficiency screens, maximum |ΔH| versus geographic latitude and descriptive Spearman ranks on [synthetic data](src/geomag_demo/spatial_temporal.py) |\n| **Geospatial aggregation** | 30° latitude × 60° longitude cells; medians only with ≥2 independent fictional stations; signed hemisphere coordinates |
 | **3D visualization** | [Dependency-free SVG/Canvas renderer](src/geomag_demo/visuals.py), local N/E/D-to-Cartesian vector projection, rotatable standalone globe |
 | **Software engineering** | [Unit tests](tests/), deterministic builds, [CI](.github/workflows/ci.yml), documented limitations, [MIT licence](LICENSE) |
 
@@ -80,7 +94,7 @@ $env:PYTHONPATH = 'src'; python -m unittest discover -s tests -v
 ```text
 src/geomag_demo/        Synthetic data, quality controls and rendering
 scripts/                Rebuild figures; generate fictional minute records
-figures/                Eight synthetic SVG figures and offline HTML viewer
+figures/                Eleven synthetic SVG figures and offline HTML viewer
 tests/                  Regression and gallery-integrity tests
 docs/                   Methods, reproducibility and CV-ready summary
 .github/workflows/      Python 3.11/3.12 verification
