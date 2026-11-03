@@ -19,6 +19,7 @@ from geomag_demo.visuals import (band_plot, build_html, coverage_plot, daily_plo
                                  globe_svg, line_chart)  # noqa: E402
 from geomag_demo.spectrogram import spectrogram_svg, FREQUENCIES_MHZ  # noqa: E402
 from geomag_demo.spatial_temporal import render_all as render_spatial_temporal  # noqa: E402
+from geomag_demo.thesis_geography import render_all as render_thesis_geography  # noqa: E402
 
 
 def build(root: Path) -> dict:
@@ -37,6 +38,8 @@ def build(root: Path) -> dict:
     }
     spatial_figures, spatial_summary = render_spatial_temporal()
     outputs.update(spatial_figures)
+    thesis_figures, thesis_summary = render_thesis_geography()
+    outputs.update(thesis_figures)
     for name,content in outputs.items():
         (root/name).write_text(content,encoding='utf-8',newline='\n')
     export_snapshots(root/'synthetic_station_snapshots.csv',snap)
@@ -54,6 +57,7 @@ def build(root: Path) -> dict:
                        'frequencies_mhz':[round(x,6) for x in FREQUENCIES_MHZ],
                        'invalid_stft_windows_in_SIM_012':10},
         'spatiotemporal':spatial_summary,
+        'thesis_geographic_components':thesis_summary,
         'files':list(outputs),
     }
     (root/'synthetic_manifest.json').write_text(json.dumps(summaries,indent=2)+'\n',encoding='utf-8')

@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="660" viewBox="0 0 1420 660" role="img" aria-label="FICTIONAL Longitude and elevation: fictional covariate checks">
+<title>Longitude and elevation: fictional covariate checks · ALL VALUES AND POSITIONS SYNTHETIC</title>
+<rect width="1420" height="660" fill="#071526"/>
+<text x="48" y="63" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#eff9ff">Longitude and elevation: fictional covariate checks</text>
+<text x="48" y="94" font-family="Arial,sans-serif" font-size="15" fill="#a0becd">Peak horizontal deviation from an artificial 9 May baseline; altitudes are invented placeholders</text>
+<rect x="50" y="135" width="648" height="460" rx="12" fill="#0f2c40" stroke="#315369"/>
+<text x="70" y="164" fill="#eff9ff" font-family="Arial,sans-serif" font-size="19">H response vs longitude</text>
+<text x="70" y="186" fill="#a0becd" font-family="Arial,sans-serif" font-size="13">Peak absolute ΔH (nT), n=56</text>
+<path d="M105 548.00 H676" stroke="#315369" stroke-dasharray="3 6"/>
+<text x="99" y="552.00" fill="#a0becd" font-family="Arial,sans-serif" font-size="12" text-anchor="end">0</text>
+<path d="M105 459.75 H676" stroke="#315369" stroke-dasharray="3 6"/>
+<text x="99" y="463.75" fill="#a0becd" font-family="Arial,sans-serif" font-size="12" text-anchor="end">72</text>
+<path d="M105 371.50 H676" stroke="#315369" stroke-dasharray="3 6"/>
+<text x="99" y="375.50" fill="#a0becd" font-family="Arial,sans-serif" font-size="12" text-anchor="end">144</text>
+<path d="M105 283.25 H676" stroke="#315369" stroke-dasharray="3 6"/>
+<text x="99" y="287.25" fill="#a0becd" font-family="Arial,sans-serif" font-size="12" text-anchor="end">216</text>
+<path d="M105 195.00 H676" stroke="#315369" stroke-dasharray="3 6"/>
+<text x="99" y="199.00" fill="#a0becd" font-family="Arial,sans-serif" font-size="12" text-anchor="end">287</text>
+<circle cx="426.42" cy="221.15" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-001: peak ΔH=-266.07 nT (fictional)</title></circle>
+<circle cx="644.14" cy="478.51" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-002: peak ΔH=+56.56 nT (fictional)</title></circle>
+<circle cx="291.86" cy="434.75" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-003: peak ΔH=-92.19 nT (fictional)</title></circle>
+<circle cx="509.58" cy="353.43" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-004: peak ΔH=-158.39 nT (fictional)</title></circle>
+<circle cx="157.30" cy="474.70" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-005: peak ΔH=+59.67 nT (fictional)</title></circle>
+<circle cx="375.02" cy="279.32" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-006: peak ΔH=-218.72 nT (fictional)</title></circle>
+<circle cx="592.74" cy="530.74" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-007: peak ΔH=-14.05 nT (fictional)</title></circle>
+<circle cx="240.46" cy="533.77" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-008: peak ΔH=+11.59 nT (fictional)</title></circle>
+<circle cx="458.18" cy="287.84" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-009: peak ΔH=-211.78 nT (fictional)</title></circle>
+<circle cx="105.90" cy="489.04" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-010: peak ΔH=+47.99 nT (fictional)</title></circle>
+<circle cx="323.62" cy="390.76" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-011: peak ΔH=-128.00 nT (fictional)</title></circle>
+<circle cx="541.34" cy="445.27" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-012: peak ΔH=-83.63 nT (fictional)</title></circle>
+<circle cx="189.06" cy="503.84" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-013: peak ΔH=+35.95 nT (fictional)</title></circle>
+<circle cx="406.78" cy="295.82" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-014: peak ΔH=-205.29 nT (fictional)</title></circle>
+<circle cx="624.51" cy="512.62" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-015: peak ΔH=+28.80 nT (fictional)</title></circle>
+<circle cx="272.23" cy="495.05" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-016: peak ΔH=-43.10 nT (fictional)</title></circle>
+<circle cx="489.95" cy="370.76" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-017: peak ΔH=-144.28 nT (fictional)</title></circle>
+<circle cx="137.67" cy="503.93" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-018: peak ΔH=+35.87 nT (fictional)</title></circle>
+<circle cx="355.39" cy="370.46" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-019: peak ΔH=-144.53 nT (fictional)</title></circle>
+<circle cx="573.11" cy="510.95" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-020: peak ΔH=-30.16 nT (fictional)</title></circle>
+<circle cx="220.83" cy="532.21" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-021: peak ΔH=+12.85 nT (fictional)</title></circle>
+<circle cx="438.55" cy="343.00" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-022: peak ΔH=-166.88 nT (fictional)</title></circle>
+<circle cx="656.27" cy="508.20" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-023: peak ΔH=+32.40 nT (fictional)</title></circle>
+<circle cx="303.99" cy="465.05" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-024: peak ΔH=-67.52 nT (fictional)</title></circle>
+<circle cx="521.71" cy="450.24" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-025: peak ΔH=-79.58 nT (fictional)</title></circle>
+<circle cx="169.43" cy="524.49" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-026: peak ΔH=+19.13 nT (fictional)</title></circle>
+<circle cx="387.15" cy="378.03" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-027: peak ΔH=-138.36 nT (fictional)</title></circle>
+<circle cx="604.87" cy="534.37" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-028: peak ΔH=+11.10 nT (fictional)</title></circle>
+<circle cx="252.59" cy="527.73" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-029: peak ΔH=-16.50 nT (fictional)</title></circle>
+<circle cx="470.31" cy="393.49" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-030: peak ΔH=-125.78 nT (fictional)</title></circle>
+<circle cx="118.04" cy="524.20" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-031: peak ΔH=+19.37 nT (fictional)</title></circle>
+<circle cx="335.76" cy="423.81" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-032: peak ΔH=-101.10 nT (fictional)</title></circle>
+<circle cx="553.48" cy="491.43" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-033: peak ΔH=-46.05 nT (fictional)</title></circle>
+<circle cx="201.20" cy="525.03" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-034: peak ΔH=+18.70 nT (fictional)</title></circle>
+<circle cx="418.92" cy="338.51" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-035: peak ΔH=-170.54 nT (fictional)</title></circle>
+<circle cx="636.64" cy="511.75" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-036: peak ΔH=+29.51 nT (fictional)</title></circle>
+<circle cx="284.36" cy="483.64" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-037: peak ΔH=-52.40 nT (fictional)</title></circle>
+<circle cx="502.08" cy="398.12" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-038: peak ΔH=-122.01 nT (fictional)</title></circle>
+<circle cx="149.80" cy="504.18" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-039: peak ΔH=+35.68 nT (fictional)</title></circle>
+<circle cx="367.52" cy="344.66" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-040: peak ΔH=-165.53 nT (fictional)</title></circle>
+<circle cx="585.24" cy="523.18" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-041: peak ΔH=-20.21 nT (fictional)</title></circle>
+<circle cx="232.96" cy="533.92" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-042: peak ΔH=+11.46 nT (fictional)</title></circle>
+<circle cx="450.68" cy="306.88" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-043: peak ΔH=-196.29 nT (fictional)</title></circle>
+<circle cx="668.40" cy="483.96" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-044: peak ΔH=+52.14 nT (fictional)</title></circle>
+<circle cx="316.12" cy="408.54" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-045: peak ΔH=-113.53 nT (fictional)</title></circle>
+<circle cx="533.84" cy="427.66" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-046: peak ΔH=-97.96 nT (fictional)</title></circle>
+<circle cx="181.57" cy="494.31" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-047: peak ΔH=+43.71 nT (fictional)</title></circle>
+<circle cx="399.29" cy="271.38" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-048: peak ΔH=-225.18 nT (fictional)</title></circle>
+<circle cx="617.01" cy="513.70" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-049: peak ΔH=+27.92 nT (fictional)</title></circle>
+<circle cx="264.73" cy="496.56" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-050: peak ΔH=-41.87 nT (fictional)</title></circle>
+<circle cx="482.45" cy="307.59" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-051: peak ΔH=-195.71 nT (fictional)</title></circle>
+<circle cx="130.17" cy="471.75" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-052: peak ΔH=+62.07 nT (fictional)</title></circle>
+<circle cx="347.89" cy="314.45" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-053: peak ΔH=-190.12 nT (fictional)</title></circle>
+<circle cx="565.61" cy="476.41" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-054: peak ΔH=-58.28 nT (fictional)</title></circle>
+<circle cx="213.33" cy="507.83" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-055: peak ΔH=+32.70 nT (fictional)</title></circle>
+<circle cx="431.05" cy="222.23" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-056: peak ΔH=-265.19 nT (fictional)</title></circle>
+<text x="105.0" y="572" fill="#a0becd" text-anchor="middle" font-family="Arial,sans-serif" font-size="12">-180</text>
+<text x="390.0" y="572" fill="#a0becd" text-anchor="middle" font-family="Arial,sans-serif" font-size="12">0</text>
+<text x="675.0" y="572" fill="#a0becd" text-anchor="middle" font-family="Arial,sans-serif" font-size="12">180</text>
+<text x="374.0" y="591" fill="#a0becd" text-anchor="middle" font-family="Arial,sans-serif" font-size="12">longitude (degrees)</text>
+<rect x="724" y="135" width="648" height="460" rx="12" fill="#0f2c40" stroke="#315369"/>
+<text x="744" y="164" fill="#eff9ff" font-family="Arial,sans-serif" font-size="19">H response vs invented elevation</text>
+<text x="744" y="186" fill="#a0becd" font-family="Arial,sans-serif" font-size="13">Peak absolute ΔH (nT), n=50</text>
+<path d="M779 548.00 H1350" stroke="#315369" stroke-dasharray="3 6"/>
+<text x="773" y="552.00" fill="#a0becd" font-family="Arial,sans-serif" font-size="12" text-anchor="end">0</text>
+<path d="M779 459.75 H1350" stroke="#315369" stroke-dasharray="3 6"/>
+<text x="773" y="463.75" fill="#a0becd" font-family="Arial,sans-serif" font-size="12" text-anchor="end">72</text>
+<path d="M779 371.50 H1350" stroke="#315369" stroke-dasharray="3 6"/>
+<text x="773" y="375.50" fill="#a0becd" font-family="Arial,sans-serif" font-size="12" text-anchor="end">144</text>
+<path d="M779 283.25 H1350" stroke="#315369" stroke-dasharray="3 6"/>
+<text x="773" y="287.25" fill="#a0becd" font-family="Arial,sans-serif" font-size="12" text-anchor="end">216</text>
+<path d="M779 195.00 H1350" stroke="#315369" stroke-dasharray="3 6"/>
+<text x="773" y="199.00" fill="#a0becd" font-family="Arial,sans-serif" font-size="12" text-anchor="end">287</text>
+<circle cx="879.38" cy="221.15" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-001: peak ΔH=-266.07 nT (fictional)</title></circle>
+<circle cx="967.10" cy="478.51" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-002: peak ΔH=+56.56 nT (fictional)</title></circle>
+<circle cx="1054.82" cy="434.75" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-003: peak ΔH=-92.19 nT (fictional)</title></circle>
+<circle cx="1142.53" cy="353.43" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-004: peak ΔH=-158.39 nT (fictional)</title></circle>
+<circle cx="1230.25" cy="474.70" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-005: peak ΔH=+59.67 nT (fictional)</title></circle>
+<circle cx="1317.97" cy="279.32" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-006: peak ΔH=-218.72 nT (fictional)</title></circle>
+<circle cx="838.85" cy="530.74" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-007: peak ΔH=-14.05 nT (fictional)</title></circle>
+<circle cx="926.57" cy="533.77" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-008: peak ΔH=+11.59 nT (fictional)</title></circle>
+<circle cx="1102.00" cy="489.04" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-010: peak ΔH=+47.99 nT (fictional)</title></circle>
+<circle cx="1189.72" cy="390.76" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-011: peak ΔH=-128.00 nT (fictional)</title></circle>
+<circle cx="1277.43" cy="445.27" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-012: peak ΔH=-83.63 nT (fictional)</title></circle>
+<circle cx="798.32" cy="503.84" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-013: peak ΔH=+35.95 nT (fictional)</title></circle>
+<circle cx="886.03" cy="295.82" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-014: peak ΔH=-205.29 nT (fictional)</title></circle>
+<circle cx="973.75" cy="512.62" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-015: peak ΔH=+28.80 nT (fictional)</title></circle>
+<circle cx="1061.47" cy="495.05" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-016: peak ΔH=-43.10 nT (fictional)</title></circle>
+<circle cx="1149.18" cy="370.76" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-017: peak ΔH=-144.28 nT (fictional)</title></circle>
+<circle cx="1324.62" cy="370.46" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-019: peak ΔH=-144.53 nT (fictional)</title></circle>
+<circle cx="845.50" cy="510.95" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-020: peak ΔH=-30.16 nT (fictional)</title></circle>
+<circle cx="933.22" cy="532.21" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-021: peak ΔH=+12.85 nT (fictional)</title></circle>
+<circle cx="1020.93" cy="343.00" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-022: peak ΔH=-166.88 nT (fictional)</title></circle>
+<circle cx="1108.65" cy="508.20" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-023: peak ΔH=+32.40 nT (fictional)</title></circle>
+<circle cx="1196.37" cy="465.05" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-024: peak ΔH=-67.52 nT (fictional)</title></circle>
+<circle cx="1284.08" cy="450.24" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-025: peak ΔH=-79.58 nT (fictional)</title></circle>
+<circle cx="804.97" cy="524.49" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-026: peak ΔH=+19.13 nT (fictional)</title></circle>
+<circle cx="980.40" cy="534.37" r="4.1" fill="#f18e7a" opacity=".75"><title>SIM-028: peak ΔH=+11.10 nT (fictional)</title></circle>
+<circle cx="1068.12" cy="527.73" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-029: peak ΔH=-16.50 nT (fictional)</title></circle>
+<circle cx="1155.83" cy="393.49" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-030: peak ΔH=-125.78 nT (fictional)</title></circle>
+<circle cx="1243.55" cy="524.20" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-031: peak ΔH=+19.37 nT (fictional)</title></circle>
+<circle cx="1331.27" cy="423.81" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-032: peak ΔH=-101.10 nT (fictional)</title></circle>
+<circle cx="852.15" cy="491.43" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-033: peak ΔH=-46.05 nT (fictional)</title></circle>
+<circle cx="939.87" cy="525.03" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-034: peak ΔH=+18.70 nT (fictional)</title></circle>
+<circle cx="1027.58" cy="338.51" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-035: peak ΔH=-170.54 nT (fictional)</title></circle>
+<circle cx="1203.02" cy="483.64" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-037: peak ΔH=-52.40 nT (fictional)</title></circle>
+<circle cx="1290.73" cy="398.12" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-038: peak ΔH=-122.01 nT (fictional)</title></circle>
+<circle cx="811.62" cy="504.18" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-039: peak ΔH=+35.68 nT (fictional)</title></circle>
+<circle cx="899.33" cy="344.66" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-040: peak ΔH=-165.53 nT (fictional)</title></circle>
+<circle cx="987.05" cy="523.18" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-041: peak ΔH=-20.21 nT (fictional)</title></circle>
+<circle cx="1074.77" cy="533.92" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-042: peak ΔH=+11.46 nT (fictional)</title></circle>
+<circle cx="1162.48" cy="306.88" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-043: peak ΔH=-196.29 nT (fictional)</title></circle>
+<circle cx="1250.20" cy="483.96" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-044: peak ΔH=+52.14 nT (fictional)</title></circle>
+<circle cx="858.80" cy="427.66" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-046: peak ΔH=-97.96 nT (fictional)</title></circle>
+<circle cx="946.52" cy="494.31" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-047: peak ΔH=+43.71 nT (fictional)</title></circle>
+<circle cx="1034.23" cy="271.38" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-048: peak ΔH=-225.18 nT (fictional)</title></circle>
+<circle cx="1121.95" cy="513.70" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-049: peak ΔH=+27.92 nT (fictional)</title></circle>
+<circle cx="1209.67" cy="496.56" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-050: peak ΔH=-41.87 nT (fictional)</title></circle>
+<circle cx="1297.38" cy="307.59" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-051: peak ΔH=-195.71 nT (fictional)</title></circle>
+<circle cx="818.27" cy="471.75" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-052: peak ΔH=+62.07 nT (fictional)</title></circle>
+<circle cx="905.98" cy="314.45" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-053: peak ΔH=-190.12 nT (fictional)</title></circle>
+<circle cx="1081.42" cy="507.83" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-055: peak ΔH=+32.70 nT (fictional)</title></circle>
+<circle cx="1169.13" cy="222.23" r="4.1" fill="#6bdbea" opacity=".75"><title>SIM-056: peak ΔH=-265.19 nT (fictional)</title></circle>
+<text x="779.0" y="572" fill="#a0becd" text-anchor="middle" font-family="Arial,sans-serif" font-size="12">0</text>
+<text x="1064.0" y="572" fill="#a0becd" text-anchor="middle" font-family="Arial,sans-serif" font-size="12">900</text>
+<text x="1349.0" y="572" fill="#a0becd" text-anchor="middle" font-family="Arial,sans-serif" font-size="12">1800</text>
+<text x="1048.0" y="591" fill="#a0becd" text-anchor="middle" font-family="Arial,sans-serif" font-size="12">Invented elevation (m)</text>
+<text x="50" y="640" font-family="Arial,sans-serif" font-size="12" fill="#a0becd">All elevations fabricated; missing values are excluded (not zero). No physical longitude/altitude effects inferred.</text>
+</svg>

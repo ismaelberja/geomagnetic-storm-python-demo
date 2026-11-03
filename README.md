@@ -39,9 +39,23 @@ This is the extended **research-method demonstration** inspired by the geographi
 
 [**Scientific methodology and reproducibility**](docs/SPATIAL_TEMPORAL_ANALYSIS.md) · [Python analysis module](src/geomag_demo/spatial_temporal.py) · [Synthetic regression tests](tests/test_spatial_temporal.py). No observations or original figures from the private thesis are included.
 
-## Data science gallery — all eleven charts
+## Magnetic components, geographic elevation and declination — final thesis-method coverage
 
-The remaining time-series, quality and regional plots are embedded below; the two 3D figures, spectrogram and three new spatial-temporal analyses are above. All eleven SVG outputs are generated using synthetic observations and can be reproduced byte-for-byte.
+The submitted Physics thesis also compared **H, X, Y and Z against geographic latitude**, and **H against longitude and station elevation**. This independent software demonstration now implements the same *questions* on a **completely fictional** dataset. Its component peak magnitude is the largest absolute difference on **artificial 10 May** from the **artificial 9 May 24-hour mean**; this is distinct from the 9 May **same-UTC-hour median** used in the six-day heatmaps above, and distinct from the **real thesis's 8 May** quiet-day reference.
+
+![Fully synthetic peak magnitude of horizontal and XYZ field components versus signed geographic latitude](figures/synthetic_component_latitude.svg)
+
+| Geographic longitude vs synthetic H response, and deliberately invented site elevation | Time-dependent synthetic declination D by signed latitude |
+| :---: | :---: |
+| ![Fictional longitude / fictional elevation comparisons for the H component](figures/synthetic_longitude_altitude.svg) | ![Fictional declination angle D variations by latitude and UTC hour, respecting circular angle differences](figures/synthetic_declination_latitude_time.svg) |
+
+The invented elevation values are **not actual observatory altitudes**; six stations deliberately lack elevation. **D is an angle in degrees**, not magnetic intensity in nT. These plots demonstrate quality-controlled computation, not a physical latitude, longitude, elevation or hemispheric effect.
+
+[**How this portfolio maps to the final BSc thesis**](docs/THESIS_METHOD_COVERAGE.md) · [New generator](src/geomag_demo/thesis_geography.py) · [Regression tests](tests/test_thesis_geography.py).
+
+## Data science gallery — all fourteen charts
+
+The remaining time-series, quality and regional plots are embedded below; the two 3D figures, spectrogram and six geographic analysis plots are above. All fourteen SVG outputs are generated using synthetic observations and can be reproduced byte-for-byte.
 
 | Signed latitude-band medians | Longitude-band medians |
 | :---: | :---: |
@@ -64,7 +78,7 @@ python scripts/build_gallery.py
 python scripts/generate_iaga_demo.py
 ```
 
-The first command deterministically recreates the eight SVG figures, standalone interactive HTML, derived fictional station CSV and JSON manifest. The second generates **three fully fictional stations × seven days × 1,440 UTC minutes** of IAGA-style XYZF test data in a new folder under `outputs/` (excluded from Git).
+The first command deterministically recreates the fourteen SVG figures, standalone interactive HTML, derived fictional station CSV and JSON manifest. The second generates **three fully fictional stations × seven days × 1,440 UTC minutes** of IAGA-style XYZF test data in a new folder under `outputs/` (excluded from Git).
 
 Run the automated tests:
 
@@ -85,7 +99,9 @@ $env:PYTHONPATH = 'src'; python -m unittest discover -s tests -v
 | **Scientific Python** | [Deterministic synthetic station/XYZ generator](src/geomag_demo/synthetic.py) and [computation module](src/geomag_demo/analysis.py) |
 | **Data parsing and QC** | [Strict synthetic IAGA-style parser](src/geomag_demo/analysis.py): UTC-minute validation, duplicate rejection, 99999 sentinels, provenance validation and complete/partial coverage |
 | **Time-series and spectral analysis** | Same-UTC-minute baselines, H = √(X² + Y²), F = √(X² + Y² + Z²), daily ranges, gap-aware **Hann STFT / PSD spectrogram** |
-| **Spatiotemporal analysis** | Six-day latitude/longitude × UTC-hour medians, sample sufficiency screens, maximum |ΔH| versus geographic latitude and descriptive Spearman ranks on [synthetic data](src/geomag_demo/spatial_temporal.py) |\n| **Geospatial aggregation** | 30° latitude × 60° longitude cells; medians only with ≥2 independent fictional stations; signed hemisphere coordinates |
+| **Geographic component & angular analysis** | [H/X/Y/Z peak comparisons](src/geomag_demo/thesis_geography.py), invented elevation QC, circular declination differences by latitude × UTC hour; [thesis-method crosswalk](docs/THESIS_METHOD_COVERAGE.md) |
+| **Spatiotemporal analysis** | Six-day latitude/longitude × UTC-hour medians, sample sufficiency screens, maximum |ΔH| versus geographic latitude and descriptive Spearman ranks on [synthetic data](src/geomag_demo/spatial_temporal.py) |
+| **Geospatial aggregation** | 30° latitude × 60° longitude cells; medians only with ≥2 independent fictional stations; signed hemisphere coordinates |
 | **3D visualization** | [Dependency-free SVG/Canvas renderer](src/geomag_demo/visuals.py), local N/E/D-to-Cartesian vector projection, rotatable standalone globe |
 | **Software engineering** | [Unit tests](tests/), deterministic builds, [CI](.github/workflows/ci.yml), documented limitations, [MIT licence](LICENSE) |
 
@@ -94,7 +110,7 @@ $env:PYTHONPATH = 'src'; python -m unittest discover -s tests -v
 ```text
 src/geomag_demo/        Synthetic data, quality controls and rendering
 scripts/                Rebuild figures; generate fictional minute records
-figures/                Eleven synthetic SVG figures and offline HTML viewer
+figures/                Fourteen synthetic SVG figures and offline HTML viewer
 tests/                  Regression and gallery-integrity tests
 docs/                   Methods, reproducibility and CV-ready summary
 .github/workflows/      Python 3.11/3.12 verification
